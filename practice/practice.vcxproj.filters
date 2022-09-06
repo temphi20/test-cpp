@@ -15,48 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ExCal.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BankImpl.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="CalImpl.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="CTest.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="PrintImpl.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="TestClass.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ExCal.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="TT.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="BankImpl.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="CalImpl.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="CTest.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="PrintImpl.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="TestClass.h">
+    <ClInclude Include="DManager.hpp">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
