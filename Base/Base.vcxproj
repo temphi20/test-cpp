@@ -72,16 +72,16 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>C:\local\boost_1_79_0\lib64-msvc-14.3;C:\tools\opencv\build\$(PlatformShortName)\vc15\lib;$(ProjectDir)lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
-    <IncludePath>include;C:\local\boost_1_79_0;C:\tools\opencv\build\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>C:\local\boost_1_79_0\stage\lib;C:\tools\opencv\build\$(PlatformShortName)\vc15\lib;$(ProjectDir)lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+    <IncludePath>includes;C:\local\boost_1_79_0;C:\tools\opencv\build\include;C:\tools\rapidjson\include;include;C:\local\boost_1_79_0;C:\tools\opencv\build\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>includes;C:\local\boost_1_79_0;C:\tools\opencv\build\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
-    <LibraryPath>C:\local\boost_1_79_0\lib64-msvc-14.3;C:\tools\opencv\build\$(PlatformShortName)\vc15\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+    <IncludePath>includes;C:\local\boost_1_79_0;C:\tools\opencv\build\include;C:\tools\rapidjson\include;includes;C:\local\boost_1_79_0;C:\tools\opencv\build\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>C:\local\boost_1_79_0\stage\lib;C:\tools\opencv\build\x64\vc15\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -149,11 +149,13 @@ copy include.h ..\include\</Command>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="DManager.hpp" />
+    <ClInclude Include="array.hpp" />
     <ClInclude Include="include.h" />
+    <ClInclude Include="timer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="timer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
