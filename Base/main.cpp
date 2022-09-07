@@ -1,13 +1,26 @@
-#include <iostream>
+#include "include.h"
 #include "DManager.hpp"
 
 #define TEST_NUM 100
-#define COUT(str) std::cout << str << std::end
+#define COUT(str) std::cout << str
+#define ENTER(str) std::cout << std::endl
 
 using namespace std;
 
+enum class Test
+{
+    one = 0,
+};
 int main()
 {
+    cv::Size size;
+    auto names = magic_enum::enum_names<Test>();
+
+    COUT(size.empty());
+    ENTER();
+    COUT(names[0]);
+    ENTER();
+
     tmphi::DManager<double> man;
     man.push(234);
     man.push(4244);
