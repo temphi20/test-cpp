@@ -118,6 +118,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,22 +143,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BankImpl.cpp" />
     <ClCompile Include="CalImpl.cpp" />
-    <ClCompile Include="CTest.cpp" />
-    <ClCompile Include="ExCal.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="PrintImpl.cpp" />
-    <ClCompile Include="TestClass.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BankImpl.h" />
     <ClInclude Include="CalImpl.h" />
-    <ClInclude Include="CTest.h" />
-    <ClInclude Include="ExCal.h" />
-    <ClInclude Include="PrintImpl.h" />
-    <ClInclude Include="TestClass.h" />
-    <ClInclude Include="TT.h" />
+    <ClInclude Include="DManager.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
