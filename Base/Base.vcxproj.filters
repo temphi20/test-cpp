@@ -18,7 +18,7 @@
     <ClInclude Include="array.hpp">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="include.h">
+    <ClInclude Include="base.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="timer.h">

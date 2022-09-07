@@ -128,8 +128,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir include
-copy include.h ..\include\</Command>
+      <Command>mkdir ..\include
+rm ..\include\*
+copy base.h ..\include\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -150,7 +151,7 @@ copy include.h ..\include\</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="array.hpp" />
-    <ClInclude Include="include.h" />
+    <ClInclude Include="base.h" />
     <ClInclude Include="timer.h" />
   </ItemGroup>
   <ItemGroup>
