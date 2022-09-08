@@ -151,10 +151,13 @@ copy base.h ..\include\</Command>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="array.hpp" />
+    <ClInclude Include="list.hpp" />
     <ClInclude Include="base.h" />
+    <ClInclude Include="filesystem.h" />
     <ClInclude Include="timer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="filesystem.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="timer.cpp" />
   </ItemGroup>
