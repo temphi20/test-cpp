@@ -4,6 +4,7 @@
 #include <vector>
 #include <span>
 #include <filesystem>
+#include <algorithm>
 
 #include <opencv2/opencv.hpp>
 #include <exprtk.hpp>
